@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<svg baseProfile="tiny-ps" version="1.2" viewBox="0 0 267.5 267.5" xmlns="http://www.w3.org/2000/svg">
+  <title>bimi-svg-tiny-12-ps</title>
+  <rect width="267.5" height="267.5" fill="#031704" />
+  <g id="Layer_1-2">
+    <path d="M98.7,98.7l90.5,69.1v21.5h-21.5l-69.1-90.5M73.6,73.6l91.9,120.4h28.5v-28.5l-120.4-91.9h0Z" fill="#fff" />
+    <polygon points="189.5 78.3 92.8 78.3 189.5 148.7 189.5 78.3" fill="#fff" />
+    <polygon points="78.5 189.7 148.9 189.7 78.5 93 78.5 189.7" fill="#fff" />
+    <rect x="73.6" y="73.6" width="120.4" height="120.4" fill="none" />
+  </g>
+</svg>
