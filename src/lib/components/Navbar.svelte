@@ -7,15 +7,15 @@
 
 <svelte:window onscroll={isScrollAtTop} />
 
-<section class={'navbar ' + (atTop ? 'full' : 'minimised')}>
-	<div class={'logo ' + (!atTop && 'minimised')}></div>
+<header class={'navbar ' + (atTop ? 'full' : 'minimised')}>
+	<a href="/" aria-label="Home"><div class={'logo ' + (!atTop && 'minimised')}></div></a>
 	<nav>
-		<a href="/contact" data-sveltekit-preload-data="off">CONTACT</a>
-		<a href="/releases" data-sveltekit-preload-data="off">RELEASES</a>
-		<a href="/insights" data-sveltekit-preload-data="off">INSIGHTS</a>
-		<a href="/socials" data-sveltekit-preload-data="off">SOCIALS</a>
+		<a href="/contact">CONTACT</a>
+		<a href="/releases">RELEASES</a>
+		<a href="/insights">INSIGHTS</a>
+		<a href="/socials">SOCIALS</a>
 	</nav>
-</section>
+</header>
 
 <style>
 	.navbar {
@@ -53,22 +53,7 @@
 	}
 
 	nav {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
 		padding: 0 30px;
-	}
-
-	nav a {
-		transition: 0.4s;
-		margin: 0 2rem;
-		padding: 0.6em 0.6em;
-		border-radius: 10px;
-	}
-
-	nav a:hover {
-		background-color: white;
-		color: rgba(3, 24, 3, 0.8);
 	}
 
 	.minimised nav a {

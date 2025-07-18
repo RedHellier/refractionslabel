@@ -10,6 +10,7 @@ html {
 
 body {
 	margin: 0;
+	background-color: rgb(3, 24, 3);
 }
 
 .container {
@@ -18,8 +19,10 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 200vh;
-	width: 95vw;
+	width: 100%;
+	margin: auto;
+	height: fit-content;
+	min-height: 100vh;
 }
 
 .highlighted {
@@ -56,7 +59,20 @@ a {
 	text-decoration: none;
 }
 
-a:visited {
-	color: white;
-	text-decoration: none;
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a {
+	transition: 0.4s;
+	margin: 0 2rem;
+	padding: 0.6em 0.6em;
+	border-radius: 10px;
+}
+
+nav a:hover {
+	background-color: white;
+	color: rgba(3, 24, 3, 0.8);
 }

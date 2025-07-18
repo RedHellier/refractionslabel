@@ -1,20 +1,27 @@
-<script>
-	import '../styles/app.css';
-	//import { getBGImage, scrollToTop } from '$lib/utils';
+<script lang="ts">
+	import '../app.css';
 	import { afterNavigate } from '$app/navigation';
 	import { page } from '$app/state';
 	let { children } = $props();
-	let bgURL = $state('url(/WebBackgrounds/Background.jpg)');
+
+	let bgURL = $state('url(/WebBackgrounds/RefractionsBackground.jpg)');
+	let pageTitle = $state('Refractions');
 
 	afterNavigate(() => {
 		window.scrollTo(0, 0);
-		bgURL = `url(/WebBackgrounds/${page.url.pathname.slice(1)}Background.jpg)`;
+		pageTitle = page.url.pathname[1]
+			? page.url.pathname[1].toUpperCase() + page.url.pathname.slice(2)
+			: 'Refractions';
+		bgURL = `url(/WebBackgrounds/${pageTitle}Background.jpg)`;
 	});
 </script>
 
+<svelte:head><title>{pageTitle}</title></svelte:head>
+
 <div class="background" style:background-image={bgURL}></div>
-<div class="container"></div>
-{@render children()}
+<div class="container">
+	{@render children()}
+</div>
 
 <style>
 	.background {

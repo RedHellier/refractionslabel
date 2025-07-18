@@ -4,26 +4,18 @@
 	import HighlightedHeader from '$lib/components/HighlightedHeader.svelte';
 </script>
 
-<section class="container">
-	<HighlightedHeader headerText="HIGHLIGHTED" />
-	<h1>HEADER ONE</h1>
-	<h2>HEADER TWO</h2>
-	<p>PARAGRAPH</p>
-	<p>PARAGRAPH</p>
-	<p>PARAGRAPH</p>
-	<p>PARAGRAPH</p>
-	<p>PARAGRAPH</p>
-	<p>PARAGRAPH</p>
-	<p>PARAGRAPH</p>
-	<p>PARAGRAPH</p>
-	<p>PARAGRAPH</p>
-	<p>PARAGRAPH</p>
-	<p>PARAGRAPH</p>
-	<p>PARAGRAPH</p>
-	<p>PARAGRAPH</p>
-	<p>PARAGRAPH</p>
-	<p>PARAGRAPH</p>
-	<p>PARAGRAPH</p>
-	<p>PARAGRAPH</p>
-	<p>PARAGRAPH</p>
-</section>
+<img alt="Main Brand Logo and Title" src="/Logos/RefractionsLogoWhite.svg" width="400" />
+
+<nav>
+	<a href="/contact">CONTACT</a>
+	<a href="/releases">RELEASES</a>
+	<a href="/insights">INSIGHTS</a>
+	<a href="/socials">SOCIALS</a>
+</nav>
+
+<style>
+	img,
+	nav {
+		margin: 5em 0;
+	}
+</style>
