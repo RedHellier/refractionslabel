@@ -1,8 +1,7 @@
 <script lang="ts">
 	let atTop = $state(true);
 	const isScrollAtTop = () => {
-		console.log(document.documentElement.scrollTop);
-		atTop = document.body.scrollTop < 20 && document.documentElement.scrollTop < 20;
+		atTop = document.body.scrollTop < 50 && document.documentElement.scrollTop < 50;
 	};
 </script>
 
@@ -11,10 +10,10 @@
 <section class={'navbar ' + (atTop ? 'full' : 'minimised')}>
 	<div class={'logo ' + (!atTop && 'minimised')}></div>
 	<nav>
-		<a href="/contact">CONTACT</a>
-		<a href="/releases">RELEASES</a>
-		<a href="/insights">INSIGHTS</a>
-		<a href="/socials">SOCIALS</a>
+		<a href="/contact" data-sveltekit-preload-data="off">CONTACT</a>
+		<a href="/releases" data-sveltekit-preload-data="off">RELEASES</a>
+		<a href="/insights" data-sveltekit-preload-data="off">INSIGHTS</a>
+		<a href="/socials" data-sveltekit-preload-data="off">SOCIALS</a>
 	</nav>
 </section>
 
@@ -24,7 +23,7 @@
 		background-color: rgba(3, 24, 3, 0.8);
 		transition: 0.4s;
 		position: fixed;
-		width: 100%;
+		width: 97%;
 		top: 0;
 		z-index: 99;
 		display: flex;
@@ -33,11 +32,11 @@
 	}
 
 	.navbar.full {
-		padding: 50px 40px 50px 20px;
+		padding: 50px 2% 50px 2%;
 	}
 
 	.navbar.minimised {
-		padding: 10px 40px 10px 20px;
+		padding: 10px 2% 10px 2%;
 	}
 
 	.logo {

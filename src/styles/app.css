@@ -8,13 +8,8 @@ html {
 	letter-spacing: 0.25rem;
 }
 
-:global(body) {
-	background-color: white;
-	background-image: url('/WebBackgrounds/HomeBackground.jpg');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+body {
+	margin: 0;
 }
 
 .container {
@@ -22,8 +17,9 @@ html {
 	max-width: fit-content;
 	flex-direction: column;
 	justify-content: center;
-	align-items: left;
-	height: 100vh;
+	align-items: center;
+	height: 200vh;
+	width: 95vw;
 }
 
 .highlighted {
@@ -41,6 +37,7 @@ html {
 h1 {
 	font-size: 10rem;
 	margin: 0;
+	letter-spacing: 0.4rem;
 }
 
 h2 {

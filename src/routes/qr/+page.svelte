@@ -53,15 +53,6 @@
 <p class="text">Redirecting…</p>
 
 <style>
-	:global(body) {
-		background-image: none;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		color: black;
-		height: 100vh;
-	}
 	.logo {
 		width: 100px;
 		height: auto;
