@@ -2,4 +2,6 @@
 	import HighlightedHeader from '$lib/components/HighlightedHeader.svelte';
 </script>
 
-<HighlightedHeader headerText="RELEASES"></HighlightedHeader>
+<div class="main-content">
+	<HighlightedHeader headerText="RELEASES"></HighlightedHeader>
+</div>

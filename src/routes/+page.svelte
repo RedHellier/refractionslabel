@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { scrollToTop } from '$lib/utils';
 	scrollToTop();
-	import HighlightedHeader from '$lib/components/HighlightedHeader.svelte';
 </script>
 
 <img alt="Main Brand Logo and Title" src="/Logos/RefractionsLogoWhite.svg" width="400" />

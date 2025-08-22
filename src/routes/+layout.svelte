@@ -16,7 +16,7 @@
 	});
 </script>
 
-<svelte:head><title>{pageTitle}</title></svelte:head>
+<svelte:head><title>{pageTitle} - Refractions</title></svelte:head>
 
 <div class="background" style:background-image={bgURL}></div>
 <div class="container">
