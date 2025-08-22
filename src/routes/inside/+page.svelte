@@ -63,10 +63,10 @@
 	</section>
 {:else}
 	{#if form?.message}
-		<p style="color: red;">{form.message}</p>
+		<p>{form.message}</p>
 	{/if}
 	<form method="POST" action="?/unlock">
-		<input type="password" name="password" placeholder="Enter Password to Unlock" required />
+		<input type="password" name="password" placeholder="Password" required />
 		<button type="submit">Unlock</button>
 	</form>
 {/if}

@@ -83,3 +83,33 @@ nav a:hover {
 	background-color: white;
 	color: rgba(3, 24, 3, 0.8);
 }
+
+button,
+input,
+textarea,
+select {
+	font-family: inherit;
+	font-variant: inherit;
+	font-size: 1.5em;
+	color: inherit;
+	letter-spacing: inherit;
+	text-transform: inherit;
+}
+
+input,
+button {
+	margin: 0;
+	color: white;
+	background-color: transparent;
+	border: 2px solid white;
+	padding: 0.6em 0.6em;
+	border-radius: 10px;
+	transition: 0.4s;
+	width: fit-content;
+}
+
+button:hover {
+	background-color: white;
+	color: rgb(3, 24, 3);
+	cursor: pointer;
+}
