@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { scrollToTop } from '$lib/utils';
 	scrollToTop();
+	
 </script>
 
 <img alt="Main Brand Logo and Title" src="/Logos/RefractionsLogoWhite.svg" width="400" />
