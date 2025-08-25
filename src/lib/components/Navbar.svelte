@@ -13,7 +13,7 @@
 		<a href="/contact">CONTACT</a>
 		<a href="/releases">RELEASES</a>
 		<a href="/insights">INSIGHTS</a>
-		<a href="/socials">SOCIALS</a>
+		<a href="https://ffm.bio/refractionslabel">SOCIALS</a>
 	</nav>
 </header>
 

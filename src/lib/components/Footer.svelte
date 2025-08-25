@@ -1,3 +1,7 @@
+<script>
+	import EmailForm from './EmailForm.svelte';
+</script>
+
 <footer>
 	<p>Refractions® is a registered trademark of Refractions Label Ltd. All rights reserved.</p>
 	<a href="https://ffm.bio/refractionslabel">Connect on Socials</a>
@@ -5,10 +9,7 @@
 		><img src="/Logos/camden_collective.webp" alt="Camden Collective Logo" width="60" /></a
 	>
 	<p id="camden-hover-text">Supported by Camden Collective</p>
-	<form>
-		<input name="email" type="email" placeholder="EMAIL ADDRESS" />
-		<button type="submit">Subscribe</button>
-	</form>
+	<EmailForm />
 </footer>
 
 <style>
