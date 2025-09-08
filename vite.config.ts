@@ -1,9 +1,9 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
-import ViteYaml from '@modyfi/vite-plugin-yaml';
+import { Mode, plugin as markdown } from 'vite-plugin-markdown';
 
 export default defineConfig({
-	plugins: [ViteYaml(), sveltekit()],
+	plugins: [markdown({ mode: [Mode.MARKDOWN] }), sveltekit()],
 	test: {
 		projects: [
 			{
