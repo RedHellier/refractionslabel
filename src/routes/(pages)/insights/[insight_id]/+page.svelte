@@ -1,8 +1,13 @@
 <script lang="ts">
-	// @ts-ignore
-	import * as md from '$lib/_content/insights/2025-08-23-insight.md';
-	// TODO: Update the import path to a valid module or ensure the file exists.
-	const attributes = md.attributes;
-
-	console.log(attributes);
+	const { data } = $props();
+	const { title, date, description } = data.attributes;
+	const text = data.text;
+	console.log(text);
 </script>
+
+<div class="main-content">
+	<h1>{title}</h1>
+	<p>{date}</p>
+	<p>{description}</p>
+	<p>{@html text}</p>
+</div>
