@@ -9,15 +9,33 @@
 <nav>
 	<a href="/contact">CONTACT</a>
 	<a href="/releases">RELEASES</a>
+	<a href="/about">ABOUT</a>
 	<a href="/insights">INSIGHTS</a>
-	<a href="https://ffm.bio/refractionslabel">SOCIALS</a>
 </nav>
 
 <EmailForm />
 
+<p>
+	Refractions<span class="registered">®</span> is a registered trademark of Refractions Label Ltd. All
+	rights reserved.
+</p>
+
 <style>
-	img,
+	img {
+		margin-top: 20rem;
+	}
+
 	nav {
-		margin: 5em 0;
+		margin-top: 2em;
+		margin-bottom: 20em;
+	}
+
+	p {
+		margin-top: 5rem;
+		text-transform: none;
+		font-size: 0.8rem;
+	}
+	.registered {
+		font-family: serif;
 	}
 </style>

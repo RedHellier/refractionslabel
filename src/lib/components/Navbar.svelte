@@ -12,8 +12,8 @@
 	<nav>
 		<a href="/contact">CONTACT</a>
 		<a href="/releases">RELEASES</a>
+		<a href="/about">ABOUT</a>
 		<a href="/insights">INSIGHTS</a>
-		<a href="https://ffm.bio/refractionslabel">SOCIALS</a>
 	</nav>
 </header>
 

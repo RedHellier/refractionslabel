@@ -3,7 +3,10 @@
 </script>
 
 <footer>
-	<p>Refractions® is a registered trademark of Refractions Label Ltd. All rights reserved.</p>
+	<p>
+		Refractions<span class="registered">®</span> is a registered trademark of Refractions Label Ltd.
+		All rights reserved.
+	</p>
 	<a href="https://ffm.bio/refractionslabel">Connect on Socials</a>
 	<a id="camden" href="https://camdencollective.co.uk/" aria-label="Camden Collective Website Link"
 		><img src="/Logos/camden_collective.webp" alt="Camden Collective Logo" width="60" /></a
@@ -28,6 +31,10 @@
 	a {
 		font-size: 0.8rem;
 		margin: 0 1rem;
+	}
+
+	.registered {
+		font-family: serif;
 	}
 
 	a {
