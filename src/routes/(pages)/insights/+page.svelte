@@ -39,6 +39,7 @@
 					<p class="date">{format(file.attributes.date, 'do MMMM yyyy')}</p>
 				</div>
 				<p class="description">{file.attributes.description}</p>
+				<a href={`/insights/${file.slug}`}>Read More</a>
 			</div>
 		{/each}
 	</div>
@@ -54,6 +55,7 @@
 
 	.insight-item {
 		background-color: white;
+		position: relative;
 		color: black;
 		width: 43%;
 		margin: 1rem;
@@ -80,5 +82,16 @@
 	p {
 		color: black;
 		font-size: 1.2rem;
+		margin-bottom: 3rem;
+	}
+
+	a {
+		padding: 0.5rem 1rem;
+		margin: 3rem 0;
+		position: absolute;
+		bottom: -2.2rem;
+		right: 1rem;
+		font-size: 1.2rem;
+		background-color: black;
 	}
 </style>
