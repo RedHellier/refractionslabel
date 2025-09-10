@@ -9,14 +9,13 @@
 
 	afterNavigate(() => {
 		window.scrollTo(0, 0);
-		pageTitle = page.url.pathname[1]
-			? page.url.pathname[1].toUpperCase() + page.url.pathname.slice(2)
-			: 'Refractions';
+		pageTitle = page.url.pathname.split('/')[1] || 'Refractions';
+		pageTitle = pageTitle.charAt(0).toUpperCase() + pageTitle.slice(1);
 		bgURL = `url(/WebBackgrounds/${pageTitle}Background.jpg)`;
 	});
 </script>
 
-<svelte:head><title>{pageTitle} - Refractions</title></svelte:head>
+<svelte:head><title>{pageTitle}</title></svelte:head>
 
 <div class="background" style:background-image={bgURL}></div>
 <div class="container">
