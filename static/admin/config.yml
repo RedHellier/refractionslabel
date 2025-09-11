@@ -16,5 +16,18 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "text" }
       - { label: "Author", name: "author", widget: "text" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Post", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+  - name: "releases"
+    label: "Releases"
+    folder: "src/lib/_content/releases"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Artist", name: "artist", widget: "string" }
+      - { label: "Release Date", name: "date", widget: "datetime" }
+      - { label: "Cover Art", name: "cover_art", widget: "image"}
+      - { label: "Buy/Stream Link", name: "buy_stream_link", widget: "string"}
+      - { label: "Description", name: "description", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list", required: false }
