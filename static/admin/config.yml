@@ -28,6 +28,7 @@ collections:
       - { label: "Artist", name: "artist", widget: "string" }
       - { label: "Release Date", name: "date", widget: "datetime" }
       - { label: "Cover Art", name: "cover_art", widget: "image"}
-      - { label: "Buy/Stream Link", name: "buy_stream_link", widget: "string"}
+      - { label: "Buy/Stream Link", name: "buy_link", widget: "string"}
+      - { label: "Embed Player Snippet", name: "embed_snippet", widget: "markdown" }
       - { label: "Description", name: "description", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list", required: false }
