@@ -2,7 +2,6 @@
 	const { data } = $props();
 	const { title, date, description } = data.attributes;
 	const text = data.text;
-	console.log(text);
 </script>
 
 <div class="main-content">
