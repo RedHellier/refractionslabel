@@ -7,10 +7,10 @@
 <img alt="Main Brand Logo and Title" src="/Logos/RefractionsLogoWhite.svg" width="400" />
 
 <nav>
-	<a href="/contact">CONTACT</a>
 	<a href="/releases">RELEASES</a>
-	<a href="/about">ABOUT</a>
 	<a href="/insights">INSIGHTS</a>
+	<a href="/about">ABOUT</a>
+	<a href="/contact">CONTACT</a>
 </nav>
 
 <EmailForm />
@@ -32,7 +32,6 @@
 
 	p {
 		margin-top: 5rem;
-		text-transform: none;
 		font-size: 0.8rem;
 	}
 	.registered {

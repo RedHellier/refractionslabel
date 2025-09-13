@@ -10,10 +10,10 @@
 <header class={'navbar ' + (atTop ? 'full' : 'minimised')}>
 	<a href="/" aria-label="Home"><div class={'logo ' + (!atTop && 'minimised')}></div></a>
 	<nav>
-		<a href="/contact">CONTACT</a>
 		<a href="/releases">RELEASES</a>
-		<a href="/about">ABOUT</a>
 		<a href="/insights">INSIGHTS</a>
+		<a href="/about">ABOUT</a>
+		<a href="/contact">CONTACT</a>
 	</nav>
 </header>
 

@@ -54,7 +54,7 @@
 					<input type="hidden" name="ml-submit" value="1" />
 
 					<div class="ml-mobileButton-horizontal">
-						<button type="submit" class="primary">Subscribe</button>
+						<button style="border-radius: none;" type="submit" class="primary">Subscribe</button>
 						<button disabled style="display: none;" type="button" class="loading">
 							<div class="ml-form-embedSubmitLoad"></div>
 							<span class="sr-only">Loading...</span>
@@ -97,6 +97,7 @@
 
 	.ml-mobileButton-horizontal {
 		display: none;
+		border-radius: none;
 	}
 
 	@media only screen and (max-width: 400px) {
@@ -120,6 +121,10 @@
 		.ml-form-formContent.horozintalForm .ml-form-horizontalRow .ml-input-horizontal > div {
 			padding-bottom: 0px !important;
 		}
+	}
+
+	button {
+		border-radius: none;
 	}
 
 	@media only screen and (max-width: 400px) {

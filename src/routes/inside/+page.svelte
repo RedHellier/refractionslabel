@@ -58,7 +58,7 @@
 			><img src="/Logos/RefractionsLogomarkWhite.svg" alt="Refractions Logomark" width="50" /></a
 		>
 		<p id="rights">
-			Refractions® is a registered trademark of Refractions Label Ltd. All rights reserved.
+			Refractions<span>®</span> is a registered trademark of Refractions Label Ltd. All rights reserved.
 		</p>
 	</section>
 {:else}
@@ -106,5 +106,9 @@
 	#rights {
 		margin-top: 5rem;
 		font-size: 0.8rem;
+	}
+
+	span {
+		font-family: serif;
 	}
 </style>

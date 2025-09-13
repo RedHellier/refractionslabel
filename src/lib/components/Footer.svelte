@@ -8,9 +8,6 @@
 		All rights reserved.
 	</p>
 	<a href="https://ffm.bio/refractionslabel">Connect on Socials</a>
-	<a id="camden" href="https://camdencollective.co.uk/" aria-label="Camden Collective Website Link"
-		><img src="/Logos/camden_collective.webp" alt="Camden Collective Logo" width="60" /></a
-	>
 	<p id="camden-hover-text">Supported by Camden Collective</p>
 	<EmailForm />
 </footer>
