@@ -67,7 +67,6 @@
 		margin: 1rem 0;
 		padding: 1rem;
 		margin-bottom: 1rem;
-		border-radius: 8px;
 		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 		min-width: 260px;
 	}
@@ -103,7 +102,6 @@
 		font-size: 1.2rem;
 		background-color: black;
 		color: white;
-		border-radius: 4px;
 		text-decoration: none;
 	}
 

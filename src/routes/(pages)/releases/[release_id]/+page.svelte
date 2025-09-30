@@ -34,7 +34,7 @@
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: flex-start;
-		width: 100%;
+		width: 72vw;
 		padding: 0 1rem;
 	}
 

@@ -21,10 +21,6 @@
 </div>
 
 <style>
-	.main-content {
-		background-color: white;
-		color: rgb(3, 24, 3);
-	}
 	.insight-detail-content {
 		background-color: white;
 		color: rgb(3, 24, 3);
@@ -33,7 +29,7 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
-		width: 100%;
+		width: 72vw;
 		padding: 0 1rem;
 	}
 

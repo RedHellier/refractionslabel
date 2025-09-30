@@ -68,7 +68,6 @@
 
 	.release-item {
 		background-color: white;
-		border-radius: 8px;
 		padding: 1rem;
 		text-align: center;
 		width: 20vw;
