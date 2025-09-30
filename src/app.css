@@ -122,3 +122,106 @@ button:hover {
 	color: rgb(3, 24, 3);
 	cursor: pointer;
 }
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+	.main-content {
+		width: 95vw;
+		margin: 10rem 0 5rem 0;
+	}
+	h1 {
+		font-size: 6rem;
+	}
+	h2 {
+		font-size: 3.5rem;
+	}
+	h3 {
+		font-size: 2.2rem;
+	}
+}
+
+@media (max-width: 900px) {
+	.main-content {
+		margin: 6rem 0 3rem 0;
+		width: 99vw;
+	}
+	.highlighted {
+		font-size: 2.5rem;
+		padding: 0 0.5rem;
+	}
+	h1 {
+		font-size: 3.5rem;
+	}
+	h2 {
+		font-size: 2.2rem;
+	}
+	h3 {
+		font-size: 1.5rem;
+	}
+	nav a {
+		margin: 0 1rem;
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 600px) {
+	html {
+		font-size: 60%;
+	}
+	.container {
+		min-height: unset;
+		padding: 0 0.5rem;
+	}
+	.main-content {
+		margin: 3rem 0 1rem 0;
+		width: 100vw;
+		min-height: unset;
+	}
+	.highlighted {
+		font-size: 1.5rem;
+		padding: 0 0.2rem;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+	h2 {
+		font-size: 1.2rem;
+	}
+	h3 {
+		font-size: 1rem;
+	}
+	nav {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	nav a {
+		margin: 0.5rem 0;
+		font-size: 1rem;
+		padding: 0.4em 0.4em;
+	}
+	p,
+	a {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 400px) {
+	html {
+		font-size: 50%;
+	}
+	.main-content {
+		margin: 1rem 0 0.5rem 0;
+	}
+	.highlighted {
+		font-size: 1rem;
+	}
+	h1,
+	h2,
+	h3 {
+		font-size: 1rem;
+	}
+	nav a {
+		font-size: 0.9rem;
+		padding: 0.2em 0.2em;
+	}
+}
