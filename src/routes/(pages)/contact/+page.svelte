@@ -8,8 +8,8 @@
 
 <style>
 	.contact-content {
-		width: 100%;
-		padding: 0 1rem;
+		width: 72vw;
+		padding: 2.5rem 2rem 2.5rem 2rem;
 	}
 
 	@media (max-width: 600px) {

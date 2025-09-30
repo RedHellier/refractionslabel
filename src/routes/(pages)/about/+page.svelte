@@ -31,7 +31,8 @@
 	}
 
 	.about-content {
-		width: 100%;
+		width: 72vw;
+		padding: 2.5rem 2rem 2.5rem 2rem;
 	}
 
 	.associations {

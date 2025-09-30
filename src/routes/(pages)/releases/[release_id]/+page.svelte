@@ -4,7 +4,7 @@
 	const { title, artist, date, cover_art, buy_link, embed_snippet, description } = data.attributes;
 </script>
 
-<div class="main-content">
+<div class="main-content release-detail-content">
 	<button class="back-button" onclick={() => (window.location.href = '/releases')}
 		>← Back to releases</button
 	>
@@ -26,7 +26,7 @@
 </div>
 
 <style>
-	.main-content {
+	.release-detail-content {
 		background-color: white;
 		color: rgb(3, 24, 3);
 		position: relative;
@@ -34,6 +34,8 @@
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: flex-start;
+		width: 100%;
+		padding: 0 1rem;
 	}
 
 	.artwork-and-embed {
@@ -62,7 +64,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		align-items: left;
+		align-items: flex-start;
 		gap: 2rem;
 		margin: 5rem 2rem;
 	}
@@ -77,6 +79,7 @@
 		position: absolute;
 		top: 1rem;
 		left: 1rem;
+		z-index: 2;
 	}
 
 	.release-date {
@@ -101,5 +104,50 @@
 		border-radius: 0;
 		cursor: pointer;
 		margin-top: 2rem;
+	}
+
+	@media (max-width: 1200px) {
+		.release-detail-content {
+			flex-direction: column;
+			align-items: center;
+			padding: 0 0.5rem;
+		}
+		.artwork-and-embed,
+		.info-and-buy {
+			width: 90%;
+			margin: 2rem 0;
+		}
+		.release-date {
+			position: static;
+			margin-bottom: 1rem;
+			text-align: right;
+			width: 100%;
+		}
+		.back-button {
+			position: static;
+			margin-bottom: 1rem;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.release-detail-content {
+			padding: 0 0.2rem;
+		}
+		.artwork-and-embed,
+		.info-and-buy {
+			width: 100%;
+			margin: 1rem 0;
+			padding: 0;
+		}
+		.info-and-buy h1 {
+			font-size: 1.2rem;
+		}
+		.info-and-buy h2 {
+			font-size: 1rem;
+		}
+		a {
+			font-size: 1rem;
+			padding: 0.7rem 1rem;
+		}
 	}
 </style>
