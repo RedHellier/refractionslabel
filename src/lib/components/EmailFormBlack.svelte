@@ -124,11 +124,15 @@
 	}
 
 	input[type='email'] {
+		border-radius: 0;
+		border-color: black;
 		margin-right: 1rem;
 	}
 
 	button {
 		border-radius: none;
+		border-color: black;
+		color: black;
 	}
 
 	@media only screen and (max-width: 400px) {

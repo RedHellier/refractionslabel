@@ -30,7 +30,7 @@
 		justify-content: flex-start;
 		align-items: center;
 		width: 72vw;
-		padding: 0 1rem;
+		padding: 3rem;
 	}
 
 	.author-and-date {
@@ -38,6 +38,7 @@
 		color: black;
 		justify-content: space-between;
 		margin-top: 1rem;
+		padding: 0 1rem;
 		width: 90%;
 	}
 
@@ -110,8 +111,5 @@
 		.author-and-date {
 			width: 100%;
 		}
-	}
-	.author-and-date {
-		width: 100%;
 	}
 </style>
