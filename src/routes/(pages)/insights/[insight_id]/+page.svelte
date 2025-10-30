@@ -6,7 +6,7 @@
 	const text = data.text;
 </script>
 
-<div class="main-content">
+<div class="main-content insight-detail-content">
 	<button class="back-button" onclick={() => (window.location.href = '/insights')}
 		>← Back to insights</button
 	>
@@ -21,7 +21,7 @@
 </div>
 
 <style>
-	.main-content {
+	.insight-detail-content {
 		background-color: white;
 		color: rgb(3, 24, 3);
 		position: relative;
@@ -29,6 +29,8 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
+		width: 72vw;
+		padding: 3rem;
 	}
 
 	.author-and-date {
@@ -36,6 +38,7 @@
 		color: black;
 		justify-content: space-between;
 		margin-top: 1rem;
+		padding: 0 1rem;
 		width: 90%;
 	}
 
@@ -49,6 +52,7 @@
 		position: absolute;
 		top: 1rem;
 		left: 1rem;
+		z-index: 2;
 	}
 
 	.description {
@@ -69,5 +73,43 @@
 
 	p {
 		color: rgb(3, 24, 3);
+	}
+
+	@media (max-width: 900px) {
+		.insight-detail-content {
+			padding: 0 0.5rem;
+		}
+		.title-container {
+			font-size: 3rem;
+			margin-top: 2rem;
+		}
+		.author-and-date {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0.2rem;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.insight-detail-content {
+			padding: 0 0.2rem;
+		}
+		.title-container {
+			font-size: 1.5rem;
+			margin-top: 1rem;
+			margin-bottom: 0.5rem;
+		}
+		.back-button {
+			font-size: 1rem;
+			top: 0.5rem;
+			left: 0.5rem;
+		}
+		.description {
+			width: 100%;
+			font-size: 1rem;
+		}
+		.author-and-date {
+			width: 100%;
+		}
 	}
 </style>

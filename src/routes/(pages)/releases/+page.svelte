@@ -31,7 +31,7 @@
 	}
 </script>
 
-<div class="main-content">
+<div class="main-content releases-content">
 	<HighlightedHeader headerText="RELEASES"></HighlightedHeader>
 	<div class="releases-list">
 		{#each releasesFiles as file}
@@ -52,17 +52,22 @@
 </div>
 
 <style>
+	.releases-content {
+		width: 72vw;
+		padding: 2.5rem 2rem 2.5rem 2rem;
+	}
+
 	.releases-list {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 10rem;
+		gap: 6rem;
 		justify-content: center;
 		align-items: center;
+		width: 100%;
 	}
 
 	.release-item {
 		background-color: white;
-		border-radius: 0;
 		padding: 1rem;
 		text-align: center;
 		width: 20vw;
@@ -70,26 +75,65 @@
 		font-variation-settings:
 			'wght' 700,
 			'wdth' 50;
-		font-size: 80%;
 		color: white;
 		letter-spacing: 0.25rem;
+		min-width: 220px;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+		transition: box-shadow 0.2s;
+	}
+	.release-item:hover {
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
 	}
 
 	.release-artwork {
 		width: 80%;
 		height: auto;
 		border: 1px solid rgba(3, 24, 3, 0.2);
-		margin: 1.5rem;
+		margin: 1.5rem auto;
+		display: block;
+		max-width: 300px;
 	}
 
 	.release-artist {
-		font-size: 4rem;
 		color: rgb(3, 24, 3);
 	}
 
 	.release-title {
-		font-size: 1.5rem;
 		padding: 0.5rem 0;
 		color: rgb(3, 24, 3);
+	}
+
+	@media (max-width: 1200px) {
+		.releases-list {
+			gap: 3rem;
+		}
+		.release-item {
+			width: 30vw;
+		}
+	}
+
+	@media (max-width: 900px) {
+		.releases-list {
+			gap: 1.5rem;
+		}
+		.release-item {
+			width: 45vw;
+			min-width: 160px;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.releases-content {
+			padding: 0 0.5rem;
+		}
+		.releases-list {
+			flex-direction: column;
+			gap: 1rem;
+		}
+		.release-item {
+			width: 100%;
+			min-width: unset;
+			padding: 0.7rem;
+		}
 	}
 </style>
