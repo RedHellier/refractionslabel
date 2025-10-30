@@ -7,7 +7,7 @@
 	<HighlightedHeader headerText="CONTACT"></HighlightedHeader>
 
 	<section class="contact-panel">
-		<div class="panel-left">
+		<div class="org-block">
 			<h3 class="panel-title">REFRACTIONS LABEL LTD</h3>
 			<address class="address-block">
 				Collective Auction Rooms<br />
@@ -16,26 +16,24 @@
 				United Kingdom<br />
 				NW1 8NJ
 			</address>
-
-			<button id="connect" class="social-button">CONNECT ON SOCIALS</button>
 		</div>
 
-		<div class="panel-right">
-			<div class="contact-emails">
-				<p>
-					GENERAL:
-					<a href="mailto:hello@refractionslabel.com">hello@refractionslabel.com</a>
-				</p>
-				<p>
-					DEMOS:
-					<a href="mailto:demo@refractionslabel.com">demo@refractionslabel.com</a>
-				</p>
-			</div>
+		<div class="contact-emails">
+			<p>
+				GENERAL:
+				<a href="mailto:hello@refractionslabel.com">hello@refractionslabel.com</a>
+			</p>
+			<p>
+				DEMOS:
+				<a href="mailto:demo@refractionslabel.com">demo@refractionslabel.com</a>
+			</p>
+		</div>
 
-			<div class="newsletter">
-				<h4>NEWSLETTER</h4>
-				<EmailFormBlack />
-			</div>
+		<button id="connect" class="social-button">CONNECT ON SOCIALS</button>
+
+		<div class="newsletter">
+			<h4>NEWSLETTER</h4>
+			<EmailFormBlack />
 		</div>
 	</section>
 </div>
@@ -50,7 +48,9 @@
 	.contact-panel {
 		background: white;
 		color: rgb(3, 24, 3);
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-auto-rows: auto;
 		gap: 3rem;
 		padding: 4rem;
 		align-items: flex-start;
@@ -59,12 +59,10 @@
 		height: auto;
 	}
 
-	.panel-left,
-	.panel-right {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		height: inherit;
+	.org-block {
+		display: grid;
+		gap: 1rem;
+		align-content: start;
 	}
 
 	.panel-title {
@@ -130,11 +128,8 @@
 			width: 92vw;
 		}
 		.contact-panel {
-			flex-direction: column;
-		}
-		.panel-left,
-		.panel-right {
-			width: 100%;
+			grid-template-columns: 1fr;
+			grid-auto-rows: auto;
 		}
 	}
 

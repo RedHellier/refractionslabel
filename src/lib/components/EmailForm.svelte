@@ -100,7 +100,7 @@
 		border-radius: none;
 	}
 
-	@media only screen and (max-width: 400px) {
+	@media only screen and (max-width: 300px) {
 		#mlb2-25336436.ml-form-embedContainer
 			.ml-form-embedWrapper
 			.ml-form-embedBody
@@ -131,7 +131,7 @@
 		border-radius: none;
 	}
 
-	@media only screen and (max-width: 400px) {
+	@media only screen and (max-width: 300px) {
 		.ml-form-formContent.horozintalForm .ml-form-horizontalRow .horizontal-fields {
 			margin-bottom: 10px !important;
 			width: 100% !important;

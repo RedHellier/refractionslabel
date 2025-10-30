@@ -75,7 +75,6 @@
 		font-variation-settings:
 			'wght' 700,
 			'wdth' 50;
-		font-size: 80%;
 		color: white;
 		letter-spacing: 0.25rem;
 		min-width: 220px;
@@ -96,12 +95,10 @@
 	}
 
 	.release-artist {
-		font-size: 2.5rem;
 		color: rgb(3, 24, 3);
 	}
 
 	.release-title {
-		font-size: 1.2rem;
 		padding: 0.5rem 0;
 		color: rgb(3, 24, 3);
 	}
@@ -123,12 +120,6 @@
 			width: 45vw;
 			min-width: 160px;
 		}
-		.release-artist {
-			font-size: 1.5rem;
-		}
-		.release-title {
-			font-size: 1rem;
-		}
 	}
 
 	@media (max-width: 600px) {
@@ -143,12 +134,6 @@
 			width: 100%;
 			min-width: unset;
 			padding: 0.7rem;
-		}
-		.release-artist {
-			font-size: 1.1rem;
-		}
-		.release-title {
-			font-size: 0.9rem;
 		}
 	}
 </style>

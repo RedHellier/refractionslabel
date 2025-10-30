@@ -4,30 +4,32 @@
 	scrollToTop();
 </script>
 
-<img
-	alt="Main Brand Logo and Title"
-	src="/Logos/RefractionsLogoWhite.svg"
-	width="400"
-	class="main-logo"
-/>
+<div class="main-content">
+	<img
+		alt="Main Brand Logo and Title"
+		src="/Logos/RefractionsLogoWhite.svg"
+		width="400"
+		class="main-logo"
+	/>
 
-<nav class="main-nav">
-	<a href="/releases">RELEASES</a>
-	<a href="/insights">INSIGHTS</a>
-	<a href="/about">ABOUT</a>
-	<a href="/contact">CONTACT</a>
-</nav>
+	<nav class="main-nav">
+		<a href="/releases">RELEASES</a>
+		<a href="/insights">INSIGHTS</a>
+		<a href="/about">ABOUT</a>
+		<a href="/contact">CONTACT</a>
+	</nav>
 
-<EmailForm />
+	<EmailForm />
 
-<p class="copyright">
-	Refractions<span class="registered">®</span> is a registered trademark of Refractions Label Ltd. All
-	rights reserved.
-</p>
+	<p class="copyright">
+		Refractions<span class="registered">®</span> is a registered trademark of Refractions Label Ltd.
+		All rights reserved.
+	</p>
+</div>
 
 <style>
 	img.main-logo {
-		margin-top: 20rem;
+		margin-top: 3rem;
 		max-width: 90vw;
 		height: auto;
 		display: block;
@@ -67,7 +69,7 @@
 	@media (max-width: 600px) {
 		img.main-logo {
 			margin-top: 3rem;
-			max-width: 95vw;
+			max-width: 80vw;
 		}
 		nav.main-nav {
 			flex-direction: column;
