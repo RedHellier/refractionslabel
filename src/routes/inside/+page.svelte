@@ -105,10 +105,45 @@
 
 	#rights {
 		margin-top: 5rem;
-		font-size: 0.8rem;
+		font-size: var(--fs-4xs);
 	}
 
 	span {
 		font-family: serif;
+	}
+
+	form {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	@media (max-width: 600px) {
+		#logo-section {
+			margin: 10em 0 5em 0;
+			max-width: 90vw;
+		}
+		img {
+			max-width: 80vw;
+			height: auto;
+		}
+		#inside-info {
+			margin: 5rem;
+			flex-direction: column;
+		}
+		.info-section {
+			margin-bottom: 5rem;
+		}
+		p {
+			margin: 1rem 0;
+		}
+		#email-link {
+			margin-bottom: 1rem;
+		}
+		#rights {
+			margin-top: 2rem;
+			font-size: var(--fs-5xs);
+		}
 	}
 </style>

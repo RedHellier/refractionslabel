@@ -28,9 +28,32 @@
 		margin: 0;
 		padding: 0;
 		top: 0;
-		width: 100%;
+		left: 0;
+		width: 100vw;
 		height: 100vh;
 		background-color: white;
 		z-index: -1;
+		background-size: cover;
+		background-position: top center;
+		background-repeat: no-repeat;
+		transition: width 0.3s;
+	}
+
+	@media (max-width: 1200px) {
+		.background {
+			width: 100vw;
+		}
+	}
+	@media (max-width: 900px) {
+		.background {
+			width: 100vw;
+		}
+	}
+	@media (max-width: 600px) {
+		.background {
+			width: 100vw;
+			overflow: hidden;
+			background-position: left top;
+		}
 	}
 </style>

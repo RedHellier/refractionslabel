@@ -100,7 +100,7 @@
 		border-radius: none;
 	}
 
-	@media only screen and (max-width: 300px) {
+	@media only screen and (max-width: 400px) {
 		#mlb2-25336436.ml-form-embedContainer
 			.ml-form-embedWrapper
 			.ml-form-embedBody
@@ -124,14 +124,18 @@
 	}
 
 	input[type='email'] {
+		border-radius: 0;
+		border-color: black;
 		margin-right: 1rem;
 	}
 
 	button {
 		border-radius: none;
+		border-color: black;
+		color: black;
 	}
 
-	@media only screen and (max-width: 300px) {
+	@media only screen and (max-width: 400px) {
 		.ml-form-formContent.horozintalForm .ml-form-horizontalRow .horizontal-fields {
 			margin-bottom: 10px !important;
 			width: 100% !important;

@@ -8,7 +8,6 @@
 		All rights reserved.
 	</p>
 	<a href="https://ffm.bio/refractionslabel">Connect on Socials</a>
-	<p id="camden-hover-text">Supported by Camden Collective</p>
 	<EmailForm />
 </footer>
 
@@ -18,8 +17,6 @@
 		justify-content: space-between;
 		align-items: center;
 		width: 97vw;
-		position: relative;
-		bottom: 0;
 		padding: 1rem 2rem;
 		background-color: rgba(3, 24, 3);
 	}
@@ -38,18 +35,28 @@
 		text-decoration: underline;
 	}
 
-	#camden-hover-text {
-		display: none;
-		position: absolute;
-		bottom: 8rem;
-		right: 1rem;
-		font-size: 1rem;
-		background-color: rgba(3, 24, 3);
-		padding: 0.5rem;
-		border: 1px solid white;
+	@media (max-width: 600px) {
+		footer {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 1rem;
+		}
+		p,
+		a {
+			text-align: center;
+		}
 	}
 
-	#camden:hover + #camden-hover-text {
-		display: block;
+	@media (max-width: 400px) {
+		footer {
+			padding: 1rem 1rem;
+		}
+	}
+
+	@media (max-width: 300px) {
+		footer {
+			padding: 1rem 0.5rem;
+		}
 	}
 </style>
