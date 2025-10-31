@@ -8,6 +8,22 @@ html {
 	letter-spacing: 0.2rem;
 }
 
+:root {
+	--fs-xxxl: 10rem;
+	--fs-xxl: 8rem;
+	--fs-xl: 6rem;
+	--fs-lg: 5rem;
+	--fs-l: 3rem;
+	--fs-md: 2rem;
+	--fs-ml: 1.5rem;
+	--fs-sm: 1.2rem;
+	--fs-xs: 1rem;
+	--fs-2xs: 0.95rem;
+	--fs-3xs: 0.9rem;
+	--fs-4xs: 0.8rem;
+	--fs-5xs: 0.7rem;
+}
+
 body {
 	margin: 0;
 	background-color: rgb(3, 24, 3);
@@ -39,29 +55,29 @@ body {
 .highlighted {
 	background-color: white;
 	color: black;
-	font-size: 10rem;
+	font-size: var(--fs-xxxl);
 	padding: 0 1.5rem;
 	border: 0;
 	font-weight: bold;
 	text-transform: uppercase;
 	mix-blend-mode: lighten;
-	font-size: 5rem;
+	font-size: var(--fs-lg);
 	width: fit-content;
 }
 
 h1 {
-	font-size: 10rem;
+	font-size: var(--fs-xxxl);
 	margin: 0;
 	letter-spacing: 0.4rem;
 }
 
 h2 {
-	font-size: 5rem;
+	font-size: var(--fs-lg);
 	margin: 0;
 }
 
 h3 {
-	font-size: 5rem;
+	font-size: var(--fs-lg);
 	margin: 0;
 }
 
@@ -70,7 +86,7 @@ a {
 	font-variation-settings:
 		'wght' 400,
 		'wdth' 100;
-	font-size: 2rem;
+	font-size: var(--fs-md);
 	margin: 0;
 	color: white;
 	text-decoration: none;
@@ -126,13 +142,16 @@ button:hover {
 @media (max-width: 1200px) {
 	.main-content {
 		width: 95vw;
-		margin: 10rem 0 5rem 0;
+		margin: 15rem 0 5rem 0;
+	}
+	nav a {
+		font-size: var(--fs-sm);
 	}
 }
 
 @media (max-width: 900px) {
 	.main-content {
-		margin: 5rem 0 3rem 0;
+		margin: 15rem 0 3rem 0;
 		width: 99vw;
 	}
 	nav a {
@@ -149,7 +168,7 @@ button:hover {
 		padding: 0 0.5rem;
 	}
 	.main-content {
-		margin: 10rem 0 1rem 0;
+		margin: 20rem 0 1rem 0;
 		width: 100vw;
 		min-height: unset;
 	}
@@ -159,7 +178,7 @@ button:hover {
 	}
 	nav a {
 		margin: 0.5rem 0;
-		font-size: 1rem;
+		font-size: var(--fs-md);
 		padding: 0.4em 0.4em;
 	}
 }
@@ -169,7 +188,7 @@ button:hover {
 		font-size: 40%;
 	}
 	.main-content {
-		margin: 10rem 0 0.5rem 0;
+		margin: 25rem 0 0.5rem 0;
 	}
 	nav a {
 		padding: 0.2em 0.2em;

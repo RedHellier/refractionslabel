@@ -48,7 +48,7 @@
 
 	p.copyright {
 		margin-top: 5rem;
-		font-size: 0.8rem;
+		font-size: var(--fs-4xs);
 		text-align: center;
 	}
 	.registered {
@@ -67,6 +67,11 @@
 	}
 
 	@media (max-width: 600px) {
+		.main-content {
+			padding: 0 1rem;
+			gap: 10rem;
+			margin-top: 25rem;
+		}
 		img.main-logo {
 			margin-top: 3rem;
 			max-width: 80vw;
@@ -78,7 +83,7 @@
 			gap: 0.5rem;
 		}
 		p.copyright {
-			font-size: 0.7rem;
+			font-size: var(--fs-5xs);
 			margin-top: 2rem;
 		}
 	}

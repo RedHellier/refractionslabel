@@ -66,7 +66,7 @@
 	}
 
 	.panel-title {
-		font-size: 6rem;
+		font-size: var(--fs-xl);
 		margin: 0 0 1rem 0;
 	}
 
@@ -78,7 +78,7 @@
 			'wdth' 50;
 		line-height: 1.6;
 		margin-bottom: 2rem;
-		font-size: 2rem;
+		font-size: var(--fs-md);
 	}
 
 	.social-button {
@@ -86,24 +86,24 @@
 		color: white;
 		border: none;
 		padding: 1rem 1.5rem;
-		font-size: 1rem;
+		font-size: var(--fs-xs);
 		cursor: pointer;
 	}
 
 	.contact-emails p {
 		color: rgba(3, 24, 3, 0.9);
 		margin: 0 0 1rem 0;
-		font-size: 1.2rem;
+		font-size: var(--fs-sm);
 	}
 
 	.contact-emails a {
 		color: rgba(3, 24, 3, 0.9);
 		text-decoration: underline;
-		font-size: 1.2rem;
+		font-size: var(--fs-sm);
 	}
 
 	.newsletter h4 {
-		font-size: 2rem;
+		font-size: var(--fs-md);
 		text-align: center;
 		margin: 2rem 0 1rem 0;
 		letter-spacing: 0.2rem;
@@ -146,7 +146,7 @@
 			font-size: 1.4rem;
 		}
 		.address-block {
-			font-size: 0.95rem;
+			font-size: var(--fs-2xs);
 		}
 		.social-button {
 			width: fit-content;

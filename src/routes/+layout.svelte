@@ -52,6 +52,8 @@
 	@media (max-width: 600px) {
 		.background {
 			width: 100vw;
+			overflow: hidden;
+			background-position: left top;
 		}
 	}
 </style>

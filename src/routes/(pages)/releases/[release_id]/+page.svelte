@@ -9,18 +9,22 @@
 		>← Back to releases</button
 	>
 	<p class="release-date">{format(date, 'do MMMM yyyy')}</p>
-	<div class="artwork-and-embed">
-		<div>
-			<img src={cover_art} alt="Cover art for {title}" />
-		</div>
-		<div class="embed-container">
-			{@html embed_snippet}
-		</div>
+
+	<div class="cover-art">
+		<img src={cover_art} alt="Cover art for {title}" />
 	</div>
-	<div class="info-and-buy">
+
+	<div class="info">
 		<h1>{title}</h1>
 		<h2>{artist}</h2>
 		<p>{@html description}</p>
+	</div>
+
+	<div class="embed-container">
+		{@html embed_snippet}
+	</div>
+
+	<div class="buy-link">
 		<a href={buy_link} target="_blank" rel="noopener noreferrer">Buy / Stream</a>
 	</div>
 </div>
@@ -30,21 +34,38 @@
 		background-color: white;
 		color: rgb(3, 24, 3);
 		position: relative;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: flex-start;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+			'cover info'
+			'embed buy';
+		gap: 2rem;
 		width: 72vw;
-		padding: 0 1rem;
+		padding: 7.5rem 5rem 3rem 5rem;
+		align-items: start;
+		justify-items: start;
 	}
 
-	.artwork-and-embed {
+	.cover-art {
+		grid-area: cover;
+	}
+
+	.info {
+		grid-area: info;
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		gap: 2rem;
-		width: 40%;
-		margin: 5rem 2rem;
+		gap: 1rem;
+	}
+
+	.embed-container {
+		grid-area: embed;
+	}
+
+	.buy-link {
+		grid-area: buy;
+		display: flex;
+		align-items: flex-start;
+		max-height: 42px;
 	}
 
 	img,
@@ -57,36 +78,24 @@
 		border: 1px solid rgba(3, 24, 3, 0.2);
 	}
 
-	.info-and-buy {
-		width: 55%;
-		min-height: 90%;
-		padding: 0 2rem;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: flex-start;
-		gap: 2rem;
-		margin: 5rem 2rem;
-	}
-
 	.back-button {
 		background-color: rgb(3, 24, 3);
 		color: white;
 		border-radius: 0;
-		font-size: 1.2rem;
+		font-size: var(--fs-sm);
 		cursor: pointer;
 		margin-bottom: 2rem;
 		position: absolute;
-		top: 1rem;
-		left: 1rem;
+		top: 2rem;
+		left: 2.5rem;
 		z-index: 2;
 	}
 
 	.release-date {
-		font-size: 1.2rem;
+		font-size: var(--fs-sm);
 		position: absolute;
-		top: 1rem;
-		right: 1rem;
+		top: 3rem;
+		right: 5rem;
 		color: rgb(3, 24, 3);
 	}
 
@@ -94,60 +103,62 @@
 		color: rgb(3, 24, 3);
 	}
 
-	a {
+	.buy-link a {
+		display: flex;
 		background-color: rgb(3, 24, 3);
 		color: white;
-		padding: 1rem 2rem;
+		height: 42px;
+		max-height: 42px;
+		text-align: center;
+		align-items: center;
+		padding: 0 1rem;
 		text-decoration: none;
-		font-size: 1.5rem;
+		font-size: var(--fs-ml);
 		width: fit-content;
 		border-radius: 0;
 		cursor: pointer;
-		margin-top: 2rem;
+		border: 0;
 	}
 
 	@media (max-width: 1200px) {
 		.release-detail-content {
-			flex-direction: column;
-			align-items: center;
-			padding: 0 0.5rem;
+			grid-template-columns: 1fr;
+			grid-template-areas:
+				'cover'
+				'info'
+				'embed'
+				'buy';
+			padding: 9rem 5rem 3rem 5rem;
 		}
-		.artwork-and-embed,
-		.info-and-buy {
-			width: 90%;
-			margin: 2rem 0;
+		.cover-art,
+		.embed-container,
+		.info,
+		.buy-link {
+			margin: 0.2rem 0;
 		}
+
 		.release-date {
-			position: static;
-			margin-bottom: 1rem;
-			text-align: right;
-			width: 100%;
-		}
-		.back-button {
-			position: static;
-			margin-bottom: 1rem;
+			top: 7rem;
 		}
 	}
 
 	@media (max-width: 600px) {
-		.release-detail-content {
-			padding: 0 0.2rem;
-		}
-		.artwork-and-embed,
-		.info-and-buy {
-			width: 100%;
-			margin: 1rem 0;
+		.cover-art,
+		.embed-container,
+		.info,
+		.buy-link {
+			margin: 0.1rem 0;
 			padding: 0;
 		}
-		.info-and-buy h1 {
-			font-size: 1.2rem;
+		.info h1 {
+			font-size: var(--fs-xxl);
 		}
-		.info-and-buy h2 {
-			font-size: 1rem;
+		.info h2 {
+			font-size: var(--fs-xl);
 		}
-		a {
-			font-size: 1rem;
-			padding: 0.7rem 1rem;
+		.buy-link a {
+			font-size: var(--fs-md);
+			height: 36px;
 		}
 	}
 </style>

@@ -49,7 +49,7 @@
 		display: flex;
 		align-items: center;
 		margin: 3rem 0;
-		font-size: 1.2rem;
+		font-size: var(--fs-sm);
 		text-decoration: none;
 		color: white;
 		gap: 1rem;
@@ -64,7 +64,7 @@
 
 	@media (max-width: 900px) {
 		.association-link {
-			font-size: 1rem;
+			font-size: var(--fs-xs);
 			margin: 2rem 0;
 		}
 		.association-img {
@@ -78,7 +78,7 @@
 			padding: 0 0.5rem;
 		}
 		.association-link {
-			font-size: 0.9rem;
+			font-size: var(--fs-3xs);
 			flex-direction: column;
 			align-items: center;
 			gap: 0.5rem;

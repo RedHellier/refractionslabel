@@ -40,18 +40,23 @@
 		margin-top: 1rem;
 		padding: 0 1rem;
 		width: 90%;
+
+		p,
+		a {
+			font-size: var(--fs-sm);
+		}
 	}
 
 	.back-button {
 		background-color: rgb(3, 24, 3);
 		color: white;
 		border-radius: 0;
-		font-size: 1.2rem;
+		font-size: var(--fs-sm);
 		cursor: pointer;
 		margin-bottom: 2rem;
 		position: absolute;
-		top: 1rem;
-		left: 1rem;
+		top: 2.5rem;
+		left: 3rem;
 		z-index: 2;
 	}
 
@@ -66,7 +71,7 @@
 		display: flex;
 		justify-content: center;
 		background-color: rgb(3, 24, 3);
-		font-size: 8rem;
+		font-size: var(--fs-xxl);
 		margin-top: 5rem;
 		margin-bottom: 1rem;
 	}
@@ -76,12 +81,8 @@
 	}
 
 	@media (max-width: 900px) {
-		.insight-detail-content {
-			padding: 0 0.5rem;
-		}
 		.title-container {
-			font-size: 3rem;
-			margin-top: 2rem;
+			font-size: var(--fs-md);
 		}
 		.author-and-date {
 			flex-direction: column;
@@ -91,25 +92,26 @@
 	}
 
 	@media (max-width: 600px) {
-		.insight-detail-content {
-			padding: 0 0.2rem;
-		}
 		.title-container {
-			font-size: 1.5rem;
-			margin-top: 1rem;
+			font-size: var(--fs-ml);
+			margin-top: 2rem;
 			margin-bottom: 0.5rem;
 		}
 		.back-button {
-			font-size: 1rem;
+			font-size: var(--fs-xs);
 			top: 0.5rem;
 			left: 0.5rem;
 		}
-		.description {
-			width: 100%;
-			font-size: 1rem;
-		}
+		.description,
 		.author-and-date {
-			width: 100%;
+			font-size: var(--fs-sm);
+		}
+	}
+
+	@media (max-width: 400px) {
+		.author-and-date,
+		.author-and-date {
+			font-size: var(--fs-md);
 		}
 	}
 </style>

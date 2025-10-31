@@ -130,7 +130,7 @@
 
 	p {
 		color: black;
-		font-size: 1.2rem;
+		font-size: var(--fs-sm);
 	}
 
 	@media (max-width: 900px) {
