@@ -112,6 +112,13 @@
 		font-family: serif;
 	}
 
+	form {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
 	@media (max-width: 600px) {
 		#logo-section {
 			margin: 10em 0 5em 0;

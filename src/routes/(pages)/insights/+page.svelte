@@ -47,9 +47,9 @@
 					<h3 class="insight-title">{file.attributes.title}</h3>
 					<div class="author-and-date">
 						<p class="author">{file.attributes.author}</p>
-						<p class="date">{format(file.attributes.date, 'do MMMM yyyy')}</p>
+						<p class="date">{format(file.attributes.date, 'do MMM yyyy')}</p>
 					</div>
-					<p class="description">{file.attributes.description}</p>
+					<p class="description">{file.attributes.description.slice(0, 60) + '...'}</p>
 				</div>
 			</button>
 		{/each}
@@ -68,7 +68,7 @@
 		align-items: stretch;
 		flex-wrap: wrap;
 		width: 100%;
-		gap: 2rem;
+		gap: 4rem;
 	}
 
 	.insight-item {
@@ -86,8 +86,6 @@
 		width: 100%;
 		padding: 3rem;
 		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-		min-width: 260px;
-		height: 300px;
 		max-height: 300px;
 	}
 
@@ -95,6 +93,7 @@
 		height: 100%;
 		width: 50%;
 		overflow: hidden;
+		background-position: center top;
 	}
 
 	.insight-info-container {
@@ -103,6 +102,7 @@
 		justify-content: flex-start;
 		flex-direction: column;
 		padding: 0 1rem;
+		overflow: hidden;
 	}
 
 	.insight-title {
@@ -116,6 +116,10 @@
 		display: flex;
 		color: black;
 		justify-content: space-between;
+
+		p {
+			text-align: left;
+		}
 	}
 
 	.author {
@@ -134,33 +138,32 @@
 	}
 
 	@media (max-width: 900px) {
-		.insight-item {
-			width: 90%;
-			min-width: unset;
-		}
-		.insights-list {
-			flex-direction: column;
-			align-items: center;
-			gap: 1rem;
-		}
-	}
-
-	@media (max-width: 600px) {
 		.insights-content {
-			padding: 0 0.5rem;
+			padding: 0 1rem;
 		}
 		.insight-item {
 			width: 100%;
-			padding: 0.7rem;
+			padding: 1rem;
+		}
+		.insight-info-container {
+			width: 100%;
+		}
+		.insights-list {
+			align-items: center;
+			gap: 4rem;
 		}
 
 		.insight-image-container {
 			display: none;
 		}
+	}
+
+	@media (max-width: 600px) {
+
 		.author-and-date {
 			flex-direction: column;
 			align-items: flex-start;
-			gap: 0.2rem;
+			gap: 2rem;
 		}
 	}
 </style>

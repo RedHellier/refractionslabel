@@ -32,7 +32,7 @@
 		<button id="connect" class="social-button">CONNECT ON SOCIALS</button>
 
 		<div class="newsletter">
-			<h4>NEWSLETTER</h4>
+			<h3>NEWSLETTER</h3>
 			<EmailFormBlack />
 		</div>
 	</section>
@@ -74,11 +74,10 @@
 		text-transform: none;
 		font-style: normal;
 		font-variation-settings:
-			'wght' 700,
-			'wdth' 50;
-		line-height: 1.6;
-		margin-bottom: 2rem;
-		font-size: var(--fs-md);
+			'wght' 400,
+			'wdth' 80;
+		line-height: 1;
+		font-size: var(--fs-ml);
 	}
 
 	.social-button {
@@ -88,6 +87,15 @@
 		padding: 1rem 1.5rem;
 		font-size: var(--fs-xs);
 		cursor: pointer;
+		margin-top: 5rem;
+	}
+
+	.contact-emails {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
 	}
 
 	.contact-emails p {
@@ -102,10 +110,10 @@
 		font-size: var(--fs-sm);
 	}
 
-	.newsletter h4 {
-		font-size: var(--fs-md);
+	.newsletter h3 {
+		font-size: var(--fs-l);
 		text-align: center;
-		margin: 2rem 0 1rem 0;
+		margin: 0 0 0.2rem 0;
 		letter-spacing: 0.2rem;
 	}
 
@@ -118,9 +126,6 @@
 			padding: 2.5rem;
 			gap: 2rem;
 		}
-		.panel-title {
-			font-size: 2.4rem;
-		}
 	}
 
 	@media (max-width: 900px) {
@@ -131,25 +136,15 @@
 			grid-template-columns: 1fr;
 			grid-auto-rows: auto;
 		}
-	}
 
-	@media (max-width: 600px) {
-		.contact-content {
-			width: 98vw;
-			padding: 1rem;
-		}
-		.contact-panel {
-			padding: 1rem;
-			gap: 1rem;
-		}
-		.panel-title {
-			font-size: 1.4rem;
-		}
-		.address-block {
-			font-size: var(--fs-2xs);
-		}
 		.social-button {
-			width: fit-content;
+			margin-top: 0;
+		}
+
+		.newsletter h3,
+		.contact-emails {
+			text-align: left;
+			align-items: start;
 		}
 	}
 </style>

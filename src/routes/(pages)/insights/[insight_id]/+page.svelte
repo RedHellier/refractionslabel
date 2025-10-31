@@ -41,8 +41,7 @@
 		padding: 0 1rem;
 		width: 90%;
 
-		p,
-		a {
+		p {
 			font-size: var(--fs-sm);
 		}
 	}
